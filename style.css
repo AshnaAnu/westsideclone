@@ -123,6 +123,9 @@ header {
         align-items: center;
         padding: 15px;
     }
+    #header-signin{
+        color: black;
+    }
 
     header img{
         margin-bottom:15px;
