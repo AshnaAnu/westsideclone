@@ -1,0 +1,166 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+
+#header-signin {
+    border-radius: 10px;
+    padding: 10px;
+   background-color: white;
+    font-size: large;
+    border: none;
+}
+/* search box  */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 400px;
+  }
+  .search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+  }
+  .search-box i {
+    margin-right: 10px;
+    color: #555;
+  }
+/* footer  */
+.footer {
+    background-color: #ffffff;
+    padding: 40px 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .form-control {
+    border-radius: 0;
+}
+
+.footer .btn {
+    border-radius: 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .list-inline-item a {
+    color: #6c757d;
+}
+
+.footer .list-inline-item a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+
+/* media query  */
+
+@media (min-width: 300px) and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header img{
+        margin-bottom:15px;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .search-box input {
+        width: calc(100% - 35px);
+    }
+
+    #header-signin {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    .email-box{
+        margin-top: -30px;
+    }
+
+    .footer ul {
+        padding: 0;
+    }
+
+    .footer ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
